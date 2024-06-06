@@ -1,0 +1,144 @@
+.navbar {
+    background-color: #333; 
+    padding: 3rem;    
+    width: auto;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+    margin-top: -30px;
+  }
+  
+
+  .navbar-menu {
+    display: flex;         
+    list-style: none;     
+    margin: 0;           
+    padding: 10px;          
+    gap: 2rem; 
+    margin-left: 1200px;   
+    font: 1.2rem "Fira Sans", sans-serif;          
+  }
+  
+  .navbar-item {
+    margin: 0;              
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;  
+    padding: 0.5rem 1rem;   
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    background-color: #555; 
+  }
+  
+  @media (max-width: 768px) { 
+    .navbar-menu {
+      flex-direction: column;   
+      align-items: center;     
+    }
+  }
+  /* ... (existing styles) ... */
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Reduce spacing between links */
+  }
+  
+  .navbar-link {
+    padding: 0.3rem 0.8rem; /* Adjust padding on smaller screens */
+  }
+}
+/* In Navbar.module.css */
+/* ... (existing styles) ... */
+
+@media (max-width: 768px) {
+  .navbar-menu { /* Hide the menu by default on smaller screens */
+    display: none;
+  }
+
+  /* ... (hamburger menu styles) ... */
+}
+/* ... (your existing navbar styles) ... */
+
+.navbar {
+  display: flex; /* Use flexbox for layout */
+  align-items: center;  /* Vertically center items */
+}
+
+.logo {
+  margin-right: 1rem; /* Add space between logo and nav links */
+}
+
+/* Navbar.module.css */
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-item {
+  margin-left: 1rem;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-item {
+    margin: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+}
+
+/* Hide the hamburger menu on larger screens */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}

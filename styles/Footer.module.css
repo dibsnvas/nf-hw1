@@ -1,0 +1,75 @@
+/* Footer.module.css */
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo Section */
+.logoSection {
+  text-align: left;
+}
+
+.copyright, .privacyLink {
+  font-size: 1.1rem;
+}
+
+/* Menu Section */
+.menuSection {
+  text-align: left;
+}
+
+.menuHeading {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+}
+
+.menuList li {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+.contactSection {
+  text-align: left;
+}
+
+.phoneNumber {
+  margin-bottom: 0.5rem;
+}
+
+.socialIcons {
+  margin-bottom: 1rem;
+}
+
+.applyButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
