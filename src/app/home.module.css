@@ -1,0 +1,84 @@
+/* Home.module.css */
+
+.main {
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-image: '/home/diana/firstday/src/assets/background.png';
+  }
+  
+  .title {
+    font-size: 3rem;       /* Increased font size */
+    text-align: center;     
+    margin-bottom: 2rem;
+    font-weight: bold;     /* Bolder font weight */
+    color: #333;           /* Darker text color */
+  }
+  
+  .intro p {  
+    font-size: 1.2rem;    /* Increased paragraph font size */
+    line-height: 1.6;     /* Improved line height for readability */
+    text-align: center;
+  }
+  
+  .latestPosts {
+    text-align: center;
+    margin-bottom: 13rem;
+  }
+  
+  .latestPosts h2 {
+    font-size: 2rem;   
+    margin-bottom: 1rem; 
+    color: #333;    /* Blue color for heading */
+  }
+  
+  .latestPostsList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;    
+    flex-wrap: wrap;  
+    justify-content: center; 
+    gap: 1rem;
+  }
+  
+  .latestPostsList li { 
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .exploreMore {
+    font-size: 1.1rem;
+    margin-top: 1rem; 
+    text-align: center;
+  }
+  
+  /* Home.module.css */
+
+/* ... (your existing styles) ... */
+
+.latestPostsList {
+    list-style: none;         /* Remove default list markers */
+    padding: 0;
+    display: flex;            /* Enable flexbox for layout control */
+    flex-direction: column;   /* Arrange list items vertically */
+    align-items: flex-start;  /* Align items to the left */
+    gap: 1rem;               /* Add space between list items */
+  }
+  
+  .latestPostsList li {
+    font-size: 1.2rem;        /* Adjust font size for readability */
+    margin-bottom: 0.5rem;
+    position: relative;       /* For positioning pseudo-element */
+    padding-left: 2rem;      /* Add space for the "bullet" */
+  }
+  
+  .latestPostsList li::before { /* Create a custom bullet point */
+    content: "\2022";          /* Unicode bullet point character */
+    position: center;
+    left: 0;
+    top: 0.2em;                /* Adjust vertical positioning */
+    font-size: 1.5em;         /* Make the bullet slightly larger */
+    color: #333;            /* Use the same blue color as the heading */
+  }
+  
+  
